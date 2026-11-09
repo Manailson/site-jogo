@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Versão do HTML(nova 5) -->
+
+<!--DENTRO DA TAG HTML FICA TODO O MEU SISTEMA WEB(SITE) -->
+<html lang="pt-br">
+<!-- Cabeça (head) onde fica as configurações gerais do site-->
+
+<head>
+    <!--Padrão de caracteres-->
+    <meta charset="UTF-8">
+
+    <!--COMPATIVEL COM CELULARES E COMPUTADORES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITULO DO SITE-->
+    <title>Document</title>
+    <!--se apertar ctrl + / = cria esse comentário -->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <p class="nome">lucia</p>
+
+    <img class="personagem" src="img/lucia.png">
+
+    <div class="texto">
+        <p class="etiqueta">selecione um personagem</p>
+        <h1>Não é só <br>um jogo.</h1>
+        <p class="texto-apoio">Escolha uma lenda de Dev City ou tire uma selfie e vire uma.</p>
+
+    </div>
+
+
+
+    <div class="botoes">
+
+
+        <img onclick="escolherPersonagem('lucia','img/lucia.png','#ff3cac','img/background2.png')" class="avatar"
+            src="img/lucia.png">
+
+        <img onclick="escolherPersonagem('jason','img/jason.png','#00b2c9','img/background1.jpg')" class="avatar"
+            src="img/jason.png">
+
+        <img onclick="escolherPersonagem('cj', 'img/cj.png','#7ed37e','img/background.jpg' )" class="avatar"
+            src="img/cj.png">
+
+
+
+        <label class="voce">📸
+            <input type="file" accept="image/*" hidden onchange="lerFoto(this)">
+
+        </label>
+    </div>
+</body>
+<script src="https://js.puter.com/v2/"></script>
+<script src="scripts.js"></script>
+
+
+</html>
